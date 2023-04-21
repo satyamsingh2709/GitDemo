@@ -88,7 +88,7 @@ public class BaseTest {
 	}
 	
 	public String screenshot(String testCaseName, WebDriver driver) throws IOException {
-		System.out.println("Push the code from 2 in git");
+		
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		
 		File source = ts.getScreenshotAs(OutputType.FILE);
