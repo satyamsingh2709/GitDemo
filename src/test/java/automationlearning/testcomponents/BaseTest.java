@@ -88,13 +88,13 @@ public class BaseTest {
 	}
 	
 	public String screenshot(String testCaseName, WebDriver driver) throws IOException {
-		System.out.println(3);
+		
 		TakesScreenshot ts = (TakesScreenshot)driver;
-		System.out.println(4);
+		
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		System.out.println(5);
+		
 		File file = new File(System.getProperty("user.dir")+"//Reports//"+testCaseName+".png");
-		System.out.println(6);
+		
 		FileUtils.copyFile(source, file);
 		return System.getProperty("user.dir")+"//Reports//"+testCaseName+".png";
 		
